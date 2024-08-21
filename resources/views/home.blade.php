@@ -295,7 +295,7 @@
                     <td>30 Million IDR</td>
                     <td>45 Million IDR</td>
                 </tr>
-                <tr>
+                <tr class="block-biru">
                     <td>CO2 Sequestration</td>
                     <td>5 Seeds</td>
                     <td>IDR 75K</td>
@@ -307,7 +307,7 @@
                     <td>2000 Trees</td>
                     <td>3000 Trees</td>
                 </tr>
-                <tr>
+                <tr class="block-biru">
                     <td>Logo on JCI Banner</td>
                     <td>&#10003;</td>
                     <td>&#10003;</td>
@@ -319,13 +319,13 @@
                     <td>&#10003;</td>
                     <td>&#10003;</td>
                 </tr>
-                <tr>
+                <tr class="block-biru">
                     <td>Considered as Main Sponsor</td>
                     <td>&#10003;</td>
                     <td>&#10003;</td>
                     <td>&#10003;</td>
                 </tr>
-                <tr>
+                <tr class="block-biru">
                     <td>Dedicated Stainless Plate</td>
                     <td></td>
                     <td>&#10003;</td>
@@ -334,10 +334,10 @@
                 <tr>
                     <td>Report Update on Planted Trees</td>
                     <td></td>
-                    <td>&#10003;</td>
-                    <td>&#10003;</td>
+                    <td class="centang">&#10003;</td>
+                    <td class="centang">&#10003;</td>
                 </tr>
-                <tr>
+                <tr class="block-biru">
                     <td>Logo on Event Clothings</td>
                     <td></td>
                     <td></td>
