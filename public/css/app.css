@@ -1,0 +1,554 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-1 {
+  display: flex;
+  justify-content: space-around;
+}
+.header-1 img {
+  height: 50px;
+  width: auto;
+}
+
+.header-tengah {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.button, .button-active, .button-nonactive {
+  padding: 10px 16px;
+  font-size: 13px;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.button {
+  color: green;
+  border: 2px solid lightgray;
+}
+
+.button-active {
+  color: green;
+  border: 2px solid green;
+}
+
+.button-nonactive {
+  color: lightgray;
+  border: 2px solid lightgray;
+}
+
+.section-brand {
+  background-color: #F5F8FA;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+.section-brand img {
+  width: auto;
+  height: 30px;
+}
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 21%;
+  padding-top: 3em;
+}
+
+.section-about2 {
+  text-align: center;
+  flex: 1;
+  margin: 0 20px;
+  position: relative;
+}
+.section-about2 img {
+  height: 300px;
+  width: auto;
+}
+
+.logo-about {
+  display: flex;
+  flex-direction: row;
+}
+.logo-about img {
+  width: auto;
+  height: 100px;
+}
+
+.desc-about {
+  font-size: 0.9rem;
+  color: #333;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.sec-summary {
+  background-color: #F5FAF8;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.sec-summary .title-sum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-summary .title-sum h1 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.sec-summary .title-sum p {
+  font-size: 1rem;
+  color: #333;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.card-summary {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+}
+
+.summary-1 {
+  padding: 55px;
+}
+.summary-1 .tanggal {
+  color: #336913;
+  font-weight: bold;
+  font-size: 24px;
+}
+.summary-1 h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+.summary-1 .btn {
+  display: flex;
+  align-items: center;
+  padding: 7px 17px;
+  font-size: 12px;
+  color: #F5F8FA;
+  background-color: green;
+  border-radius: 50px;
+  text-align: center;
+  width: 30%;
+}
+.summary-1 .btn img {
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.summary-2 img {
+  width: 600px;
+  height: 350px;
+  padding: 20px;
+}
+
+.summary-end {
+  display: flex;
+  flex-direction: row;
+}
+
+.end-text {
+  padding: 10px;
+}
+
+.garis-1 {
+  border: none;
+  height: 3px;
+  background-color: green;
+}
+
+.garis {
+  border: none;
+  height: 3px;
+  background-color: #ccc;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sponsor {
+  text-align: center;
+  padding: 3em 1.5em;
+}
+.sponsor p {
+  font-size: 1rem;
+  color: #333;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3em;
+}
+.sponsor h3 {
+  padding: 30px 0;
+}
+.sponsor h1 {
+  color: darkblue;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f7faff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px;
+}
+td:first-child {
+  display: flex;
+  align-items: center;
+}
+td img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+th {
+  text-align: center;
+  padding: 15px;
+}
+
+thead {
+  background-color: #aee7fa;
+}
+
+tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+tr:last-child {
+  border-bottom: none;
+}
+
+.foot-table {
+  border-top: 2px solid #cccccc;
+  text-align: center;
+}
+
+.foot-table1 {
+  background-color: #3a96b4;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.foot-table1 button {
+  background-color: #ffffff;
+  color: #3a96b4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.foot-table1 button:hover {
+  font-weight: bold;
+}
+.foot-table1 .btn-donation {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.block-biru {
+  background-color: #f1f6f7;
+}
+
+.action-btn {
+  background-color: #3a96b4;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+.action-btn:hover {
+  background-color: #6d929e;
+}
+
+.donation-section {
+  text-align: center;
+  padding: 0 40px;
+  padding-top: 40px;
+  background-color: #e8f5e9;
+}
+
+.content h1 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.content p {
+  font-size: 1.2rem;
+  color: #333;
+  width: 47%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.donate-button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.donate-button:hover {
+  background-color: #1b5e20;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+  align-items: end;
+}
+.images-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project-info {
+  width: 50%;
+}
+.project-info h3 {
+  font-size: 1.2rem;
+  color: #666;
+}
+.project-info h1 {
+  font-size: 2rem;
+  margin: 10px 0 20px;
+  color: #333;
+}
+
+.project-progress {
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  padding: 5%;
+}
+.project-progress .project-progress-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project-progress .project-stats1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+.project-progress .project-stats1 img {
+  height: 40px;
+  width: auto;
+}
+.project-progress .progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.project-progress .progress-bar .progress-fill {
+  width: 56.9%;
+  height: 100%;
+  background-color: #388e3c;
+  border-radius: 5px;
+}
+
+.project-button {
+  background-color: #388e3c;
+  color: white;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+}
+.project-button:hover {
+  background-color: #2e7d32;
+}
+
+.project-image {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.leaderboard {
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  background-size: cover;
+}
+.leaderboard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.leaderboard-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.leaderboard-tabs .tab:hover {
+  background-color: #c8e6c9;
+}
+
+.leaderboard-list {
+  margin-top: 20px;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: end;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.leaderboard-item img {
+  height: 50px;
+  width: auto;
+}
+.leaderboard-item .logo-tree2 {
+  height: 30px;
+  width: auto;
+}
+
+.rank {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 15px;
+  background-color: #388e3c;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.user-info {
+  flex: 1;
+}
+.user-info .badge {
+  font-size: 0.9rem;
+  color: #666;
+  display: block;
+}
+.user-info .user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.donation-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.donation-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.about-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+.arrow-center {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 10px 20px;
+  height: 80px;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.arrow-center img {
+  height: 60px;
+  width: auto;
+}
+.arrow-center span {
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
