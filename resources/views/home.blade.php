@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laravel-Test</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 
@@ -28,9 +28,10 @@
             <h1>Green Horizons Await, Join Us in Planting 10,000 Mangroves!</h1>
             <div class="project-progress">
                 <div class="project-progress-desc">
-                    <div class="project-stats1">
-                        <img src="assets/logo-tree.png" alt="">
-                        <span class="project-amount">5,690</span>/10,000 Pohon
+                    <div class="leaderboard-item">
+                        <img class="logo-tree2" src="assets/logo-tree.png" alt="">
+                        <div class="donation-count">5,690</div>
+                        <div class="donation-text">/ 10,000 Pohon</div>
                     </div>
                     <div class="project-stats2">
                         <a href="#" class="project-button">Support Our Mission ></a>
@@ -86,7 +87,7 @@
                     <div class="donation-text">Pohon</div>
                 </div>
                 <div class="leaderboard-item">
-                    <div class="rank">04</div>
+                    <div class="rank2">04</div>
                     <img src="assets/Guardian of the Grove.png" alt="">
                     <div class="user-info">
                         <span class="badge">Guardian of the Grove</span>
@@ -97,7 +98,7 @@
                     <div class="donation-text">Pohon</div>
                 </div>
                 <div class="leaderboard-item">
-                    <div class="rank">05</div>
+                    <div class="rank3">05</div>
                     <img src="assets/Guardian of the Grove.png" alt="">
                     <div class="user-info">
                         <span class="badge">Guardian of the Grove</span>
@@ -108,7 +109,7 @@
                     <div class="donation-text">Pohon</div>
                 </div>
                 <div class="leaderboard-item">
-                    <div class="rank">06</div>
+                    <div class="rank3">06</div>
                     <img src="assets/Mangrove Master.png" alt="">
                     <div class="user-info">
                         <span class="badge">Mangrove Maker</span>
@@ -154,7 +155,7 @@
                 <img src="assets/arrow.png" alt="">
                 <span>TRANSFORMATION</span>
             </div>
-        </div>        
+        </div>
     </section>
     <section class="sec-summary">
         <div class="title-sum">
@@ -343,7 +344,9 @@
                     <td>&#10003;</td>
                 </tr>
                 <tr class="foot-table">
-                    <td class="foot-table1"><div class="btn-donation">Make a Donation</div></td>
+                    <td class="foot-table1">
+                        <div class="btn-donation">Make a Donation</div>
+                    </td>
                     <td class="foot-table1"><button>Support Our Mission &gt;</button></td>
                     <td class="foot-table1"><button>Support Our Mission &gt;</button></td>
                     <td class="foot-table1"><button>Support Our Mission &gt;</button></td>

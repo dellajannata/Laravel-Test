@@ -15,6 +15,29 @@ $color_13: #666;
 $color_14: #388e3c;
 $font-family_1: Arial, sans-serif;
 
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin justify-spaceAround {
+    justify-content: space-around;
+}
+
+@mixin rank {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color_12;
+    margin-right: 15px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
 // Global styles
 body {
     font-family: $font-family_1;
@@ -31,22 +54,27 @@ ul {
 // Header styles
 .header-1 {
     display: flex;
-    justify-content: space-around;
+    @include justify-spaceAround;
 
     img {
         height: 50px;
         width: auto;
     }
+
+    a:hover {
+        color: $color_5;
+    }
 }
 
 .header-tengah {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     gap: 20px;
 }
 
 // Button styles
-.button, .button-active, .button-nonactive {
+.button,
+.button-active,
+.button-nonactive {
     padding: 10px 16px;
     font-size: 13px;
     border-radius: 50px;
@@ -73,9 +101,8 @@ ul {
 // Section styles
 .section-brand {
     background-color: $color_7;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex-row;
+    @include justify-spaceAround;
     padding: 30px;
 
     img {
@@ -85,8 +112,7 @@ ul {
 }
 
 .section-about {
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     align-items: center;
     margin: 0 21%;
     padding-top: 3em;
@@ -105,8 +131,7 @@ ul {
 }
 
 .logo-about {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
 
     img {
         width: auto;
@@ -125,13 +150,11 @@ ul {
 
 .sec-summary {
     background-color: #F5FAF8;
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     padding: 20px;
 
     .title-sum {
-        display: flex;
-        flex-direction: column;
+        @include flex-col;
         align-items: center;
 
         h1 {
@@ -162,8 +185,7 @@ ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
 }
 
 .summary-1 {
@@ -209,8 +231,7 @@ ul {
 }
 
 .summary-end {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
 }
 
 .end-text {
@@ -422,8 +443,7 @@ tr {
 
 // Project section styles
 .project-section {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     padding: 20px;
     border-radius: 10px;
 }
@@ -452,8 +472,7 @@ tr {
     padding: 5%;
 
     .project-progress-desc {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         justify-content: space-between;
     }
 
@@ -511,7 +530,7 @@ tr {
     width: 50%;
     padding: 20px;
     border-radius: 10px;
-    // background-image: url(..);
+    background-image: url('/public/assets/background.png');
     background-size: cover;
 
     h2 {
@@ -555,13 +574,18 @@ tr {
 }
 
 .rank {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: $color_12;
-    margin-right: 15px;
+    @include rank;
     background-color: #388e3c;
-    border-radius: 50%;
-    padding: 5px;
+}
+
+.rank2 {
+    @include rank;
+    background-color: #78a946;
+}
+
+.rank3 {
+    @include rank;
+    background-color: #96d05c;
 }
 
 .user-info {
@@ -594,8 +618,7 @@ tr {
 
 // About image section
 .about-img {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -604,8 +627,7 @@ tr {
 
 .arrow-center {
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     align-items: center;
     justify-content: center;
     border-radius: 30px;

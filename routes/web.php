@@ -20,4 +20,4 @@ use App\Http\Controlers\HomeContrroler;
 
 // Auth::routes();
 
-Route::get('/beranda', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

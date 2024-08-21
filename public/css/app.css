@@ -18,6 +18,9 @@ ul {
   height: 50px;
   width: auto;
 }
+.header-1 a:hover {
+  color: #336913;
+}
 
 .header-tengah {
   display: flex;
@@ -25,7 +28,9 @@ ul {
   gap: 20px;
 }
 
-.button, .button-active, .button-nonactive {
+.button,
+.button-active,
+.button-nonactive {
   padding: 10px 16px;
   font-size: 13px;
   border-radius: 50px;
@@ -444,6 +449,7 @@ tr:last-child {
   width: 50%;
   padding: 20px;
   border-radius: 10px;
+  background-image: url("/public/assets/background.png");
   background-size: cover;
 }
 .leaderboard h2 {
@@ -485,9 +491,29 @@ tr:last-child {
   font-weight: bold;
   color: white;
   margin-right: 15px;
-  background-color: #388e3c;
   border-radius: 50%;
   padding: 5px;
+  background-color: #388e3c;
+}
+
+.rank2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 15px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #78a946;
+}
+
+.rank3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 15px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #96d05c;
 }
 
 .user-info {
